@@ -72,6 +72,6 @@ body {
 }
 
 .call-to-action:hover {
-    transform: scale(1.02);
+    transform: scale(1.09);
     transition: 0.09s;
 }
