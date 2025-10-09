@@ -9,6 +9,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* INICIO NAVBAR */
 .nav {
     background:#1c1c1c;
@@ -16,6 +20,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-list {
@@ -150,3 +157,88 @@ body {
     justify-content: center;
     align-items: center;
 }   
+
+/* FIM PROJETOS */
+
+/* INICIO FOOTER */
+.action {
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    padding: 14px 28px;
+    margin-top: 18px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.action:hover {
+    background-color: #ccc;
+    color: #000;
+    transition: 0.9s;
+    transform: scale(1.09);
+}
+
+footer {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1rem;
+}
+/* FIM FOOTER */
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1050px) {
+
+    /* INICIO MAIN */
+    .main h1 {
+        font-size: 45px;
+    }
+
+    .main p {
+        font-size: 18px;
+    }
+
+    .main {
+        background-size: cover;
+    }
+    /* FINAL MAIN */
+
+    /* INICIO SOBRE */
+    .sobre {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+
+    }
+
+    .sobre div {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .sobre div h2 {
+        font-size: 45px;
+    }
+
+    .sobre img {
+        width: 80%;
+        margin-top: 30px;
+    }
+    /* FIM SOBRE */
+
+    /* INICIO PROJETOS */
+    .projetos img {
+        width: 27.5%;
+    }
+}
